@@ -1,4 +1,4 @@
-# XAMPP Setup
+# XAMPP v3.2.4 Setup
 
 **Hinweis**
 
