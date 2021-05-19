@@ -6,7 +6,7 @@ Das _/htdocs_ Verzeichnis darf nicht gelöscht werden, da sonst der Apache Serve
 
 ## vhosts
 
-    C:\xampp\apache\conf\extra
+    C:\xampp\apache\conf\extra\httpd-vhosts.conf
 
 **Templatekonfiguration für vhosts**
 
