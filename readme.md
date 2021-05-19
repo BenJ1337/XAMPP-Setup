@@ -10,31 +10,29 @@ Das _/htdocs_ Verzeichnis darf nicht gelöscht werden, da sonst der Apache Serve
 
 **Templatekonfiguration für vhosts**
 
-*$nr* durch die entsprechende Zahl ersetzen und entsprechend duplizieren.
+*$nr* durch die entsprechende Zahl ersetzen und entsprechend duplizieren. Die Verzeichnisse müssen natürlich auch noch angelegt werden.
 
 ```xml
 <VirtualHost $nr.local:80>
-    ServerAdmin webmaster@dummy-host.example.com
     DocumentRoot "C:/xampp/local$nr/"
     ErrorLog "logs/local$nr.local-error.log"
     CustomLog "logs/local$nr.local-access.log" common
     <Directory "C:/xampp/local$nr/">
-      AllowOverride All
-      Require local
-	  </Directory>
+        AllowOverride All
+        Require local
+	</Directory>
 </VirtualHost>
 
 ...
 
 <VirtualHost listings.local:80>
-    ServerAdmin webmaster@dummy-host.example.com
     DocumentRoot "C:/xampp/local-listings/"
     ErrorLog "logs/htdocs3.local-error.log"
     CustomLog "logs/htdocs3.local-access.log" common
     <Directory "C:/xampp/local-listings/">
-      AllowOverride All
-      Require local
-	  </Directory>
+        AllowOverride All
+        Require local
+	</Directory>
 </VirtualHost>
 ```
 **Einstiegsseite unter C:/xampp/local-listings/index.html**
