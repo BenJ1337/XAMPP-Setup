@@ -4,6 +4,10 @@
 
 Das _/htdocs_ Verzeichnis darf nicht gelöscht werden, da sonst der Apache Server sich nicht mehr starten lässt.
 
+**Beachte:**
+
+Es darf auch kein Verzeichnis verwendet werden, dass die Zeichenfolge _htdocs_ enthält. Der Apache Server gibt hier eine 403 Forbidden Fehlermeldung zurück.
+
 ## vhosts
 
     C:\xampp\apache\conf\extra\httpd-vhosts.conf
