@@ -49,7 +49,7 @@ At the end, you need to edit the vhosts as follows
     SSLCertificateFile "conf/ssl.crt/<your-filename>.crt"
     SSLCertificateKeyFile "conf/ssl.key/<your-filename>.key"
 </VirtualHost>
-...
+```
 
 ## vhosts
 
