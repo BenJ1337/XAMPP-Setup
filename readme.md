@@ -16,12 +16,12 @@ Run the following Windows Batch Script
 1. At the beginning you have to choose a pass phrase for the private key. You can enter any value (length has to be between 4 to 511 characters). Sidenote: The passphrase protects the private key.
 2. Country Name: Value can be left empty
 3. State or Province Name: can be left enpty
-4. Locality Name
-5. Organization Name
-6. Organization Unit Name
+4. Locality Name: can be left enpty
+5. Organization Name: can be left enpty
+6. Organization Unit Name: can be left enpty
 7. **Common Name:** here you enter the domain you use for vhost
 8. Email Address: can be left empty
-9. A challenge password: can be left empty. (it can be required for request certificate revocation)
+9. A challenge password: can be left empty. (Sidenote: it is required for request certificate revocation. it doesn't matter in this context)
 10. company name
 11. Enter pass phrase for privkey.pem: you have to enter the pass phrase you have chosen at the beginning for your private key
 12. the process hopefully finished successful
@@ -32,7 +32,7 @@ The script put the two files in the following directories:
 	
 	C:\xampp\apache\conf\ssl.crt\server.crt
 	
-The makecert.bat overwrites this two file at each run. Two use TLS for multiple domain, you have to rename these two files or put them in a different directory.
+The makecert.bat overwrites this two file at each run. To use TLS for multiple domain, you have to rename these two files or move them in a different directory.
 
 At the end, you need to edit the vhosts as follows
 
